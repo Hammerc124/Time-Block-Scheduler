@@ -1,142 +1,152 @@
+/* CSS STYLING SETTINGS */
 body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1;
-    font-size: 18px;
-    background-color: rgb(255, 255, 255);
-  }
-  
-  textarea{
-    background: transparent;
-    border: none;
-    resize: none;
-    color: black;
-    border-left: 1px solid black;
-    padding: 10px;
-  }
-  
-  .description{
-    white-space: pre-wrap;
-    color: ghostwhite;
-    text-align: center;
-  }
-  
-  .jumbotron {
-    text-align: center;
-    background-color: transparent;
-    border-bottom: 18px solid #66BFBF;
-  }
-  
-  #currentDay {
-    font-size: 25px;
-  }
-  
-  .time-block{
-    text-align: right;
-    border-radius: 18px;
-  }
-  
-  .row {
-    white-space: pre-wrap;
-    border-top: 3px solid;
-    height: 80px;
-  }
-  
-  .hour {
-    background-color: #9EA1D4;
-    color: #000000;
-    border-top: 1px solid #9EA1D4;
-  }
-  
-  .past {
-    background-color: #4E6E81;
-    color: white;
-  }
-  
-  .present {
-    background-color: #FF0063;
-    color: white;
-  }
-  
-  .future {
-    background-color: #66BFBF;
-    color: white;
-  }
-  
-  .saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #2E3840;
-    color: white;
-  }
-  
-  .saveBtn i:hover {
-    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
-    border: 3px solid #00d7c3;
-  }
-  
-  #clearTask {
-    font-size: 15pt;
-    border-left: 1px solid black;
-    background-color: #2E3840;
-    color: white;
-    padding: 2%;
-    margin-bottom: 3%;
-  }
-  
-  #clearTask:hover {
-    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
-    border: 3px solid #00d7c3;
-  }
-  
-  .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 100px; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%;
-    overflow: auto; 
-    background-color: #00000091; 
-  }
-  
-  .modal-body {
-    width: 50%;
-    margin: auto;
-    padding: 20px;
-    color: aliceblue;
-    background-color: #2E3840;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    border: 1px solid #66BFBF;
-  }
-  .modal-h2 {
-    font-size: 18pt;
-  }
-  
-  .sayYes {
-    font-size: 15pt;
-    width: 100px;
-    background-color: #00d7c3;
-    font-weight: bold;
-    color: white;
-  }
-  
-  .sayYes:hover {
-    color: black;
-  }
-  
-  .sayNo {
-    font-size: 15pt;
-    width: 100px;
-    background-color: #FF0063;
-    font-weight: bold;
-    color: white;
-  }
-  
-  .sayNo:hover {
-    color: black;
-  }
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* DESCRIPTION OF EVENT */
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: black;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.description{
+  white-space: pre-wrap;
+  color: ghostwhite;
+  text-align: center;
+}
+
+/* HEADER SECTION */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  border-bottom: 18px solid #66BFBF;
+}
+
+#currentDay {
+  font-size: 25px;
+}
+
+.time-block{
+  text-align: right;
+  border-radius: 18px;
+}
+
+.row {
+  white-space: pre-wrap;
+  border-top: 3px solid;
+  height: 80px;
+}
+
+.hour {
+  background-color: #9EA1D4;
+  color: #000000;
+  border-top: 1px solid #9EA1D4;
+}
+
+/* COLOUR BLOCK FOR PAST, PRESENT AND FUTURE SLOTS */
+.past {
+  background-color: #4E6E81;
+  color: white;
+}
+
+.present {
+  background-color: #FF0063;
+  color: white;
+}
+
+.future {
+  background-color: #66BFBF;
+  color: white;
+}
+
+/* SAVE BUTTON ICON */
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #2E3840;
+  color: white;
+}
+
+.saveBtn i:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+}
+
+/* CLEAR MY TASKS BUTTON. */
+#clearTask {
+  font-size: 15pt;
+  border-left: 1px solid black;
+  background-color: #2E3840;
+  color: white;
+  padding: 2%;
+  margin-bottom: 3%;
+}
+
+#clearTask:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+}
+
+/* MODAL PROMPT SETTINGS. */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: #00000091; 
+}
+
+/* MODAL CONTENT AND TEXT SETTINGS. */
+.modal-body {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  color: aliceblue;
+  background-color: #2E3840;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  border: 1px solid #66BFBF;
+}
+.modal-h2 {
+  font-size: 18pt;
+}
+
+/* MODAL YES BUTTON SETTINGS. */
+.sayYes {
+  font-size: 15pt;
+  width: 100px;
+  background-color: #00d7c3;
+  font-weight: bold;
+  color: white;
+}
+
+.sayYes:hover {
+  color: black;
+}
+
+/* MODAL NO BUTTON SETTINGS. */
+.sayNo {
+  font-size: 15pt;
+  width: 100px;
+  background-color: #FF0063;
+  font-weight: bold;
+  color: white;
+}
+
+.sayNo:hover {
+  color: black;
+}
