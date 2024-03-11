@@ -5,27 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+<!--PULLING FROM BOOTSTRAP-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous" />
 
+<!--THIS IS GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet" />
  
+<!--CSS LINK-->   
     <link rel="stylesheet" href="./assets/css/style.css" />
    
+<!-- TITLE -->
     <title>Tasks Buddy: A Workday Scheduler</title>
   </head>
 
   <body>    
+<!-- BOOTSTRAP STYLING-->
   <header class="jumbotron bg-danger"> 
       <h1 class="font-weight-bold text-white display-1">Tasks Buddy</h1>
       <p class="text-white font-weight-bold lead">A Simple Workday Scheduler to Help You Stay On Top Of Your Tasks</p>
       <p id="currentDay" class="text-white font-weight-bold lead"></p>
 
+<!--CLEAR TASKS BUTTON-->
    <button class="modalBtn col-8 col-md-10 text-nowrap" id="clearTask">Clear My Tasks?</button>
    <div id="myModal" class="modal">
 
+<!--YES OR NO TO CLEAR TRIGGER MODAL BUTTON-->
    <div class="modal-body">
        <h2 class="modal-h2">Clear all your tasks? click yes to continue?</h2>
        <button class="sayYes col-1 p-2 m-2 text-center text-nowrap ">Yes</button>
@@ -33,6 +40,7 @@
    </div>
   </header>
 
+<!--THESE ARE THE TIME SLOTS 09:00HR - 18:00HR (12 HR ON THE FRONT-END)-->
     <div class="container-lg px-5">
      
       <div id="hour9" class="row time-block">
@@ -95,8 +103,11 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
+<!--PULLING FROM JQUERY CDN-->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<!--TO LINK HTML TO JAVASCRIPT FILE-->
     <script src="./assets/js/script.js"></script>
+<!--PULLING FROM CLOUDFLARE JS CDNs - MOMENT.JS FOR DATE & TIME STAMP-->    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
   
   </body>
