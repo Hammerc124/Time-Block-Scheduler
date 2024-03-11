@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet" />
+ 
+    <link rel="stylesheet" href="./assets/css/style.css" />
+   
+    <title>Tasks Buddy: A Workday Scheduler</title>
+  </head>
+
+  <body>    
+  <header class="jumbotron bg-danger"> 
+      <h1 class="font-weight-bold text-white display-1">Tasks Buddy</h1>
+      <p class="text-white font-weight-bold lead">A Simple Workday Scheduler to Help You Stay On Top Of Your Tasks</p>
+      <p id="currentDay" class="text-white font-weight-bold lead"></p>
+
+   <button class="modalBtn col-8 col-md-10 text-nowrap" id="clearTask">Clear My Tasks?</button>
+   <div id="myModal" class="modal">
+
+   <div class="modal-body">
+       <h2 class="modal-h2">Clear all your tasks? click yes to continue?</h2>
+       <button class="sayYes col-1 p-2 m-2 text-center text-nowrap ">Yes</button>
+       <button class="sayNo col-1 p-2 m-2 text-center text-nowrap ">No</button>
+   </div>
+  </header>
+
+    <div class="container-lg px-5">
+     
+      <div id="hour9" class="row time-block">
+        <div class="col-2 col-md-1 hour text-center py-3">9:00am</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="hour10" class="row time-block">
+        <div class="col-2 col-md-1 hour text-center py-3">10:00am</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="hour11" class="row time-block">
+        <div class="col-2 col-md-1 hour text-center py-3">11:00am</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="hour12" class="row time-block">
+        <div class="col-2 col-md-1 hour text-center py-3">12:00pm</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="hour13" class="row time-block">
+        <div class="col-2 col-md-1 hour text-center py-3">1:00pm</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="hour14" class="row time-block">
+        <div class="col-2 col-md-1 hour text-center py-3">2:00 pm</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="hour15" class="row time-block">
+        <div class="col-2 col-md-1 hour text-center py-3">3:00am</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="hour16" class="row time-block">
+        <div class="col-2 col-md-1 hour text-center py-3">4:00pm</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="hour17" class="row time-block">
+        <div class="col-2 col-md-1 hour text-center py-3">5:00pm</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="hour18" class="row time-block">
+        <div class="col-2 col-md-1 hour text-center py-3">6:00pm</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  
+  </body>
+</html>
